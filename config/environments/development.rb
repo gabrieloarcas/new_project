@@ -6,6 +6,11 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
+  # At this point, a number of instructions will appear in the console. Among these instructions, 
+  # you'll need to set up the default URL options for the Devise mailer in each environment. 
+  
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3001 }
+
   # Do not eager load code on boot.
   config.eager_load = false
 
